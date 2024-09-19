@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sitio Minimalista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sitio Web Minimalista</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenido a nuestro sitio web</h2>
+            <p>Este es un diseño minimalista usando la fuente Times New Roman. El estilo es sencillo, pero elegante y fácil de leer.</p>
+        </section>
+
+        <section class="content">
+            <h3>Sobre Nosotros</h3>
+            <p>Nuestra misión es crear sitios web funcionales y bonitos, con un enfoque en la simplicidad y la usabilidad.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sitio Minimalista. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
