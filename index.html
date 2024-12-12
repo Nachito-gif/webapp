@@ -1,80 +1,68 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles.css">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Ignacio Cano Sáenz</title>
-    <link rel="stylesheet" href="css/index.css"> <!-- Ruta actualizada -->
-    <meta name="description" content="Novedades en diseño web y colecciones de webs destacadas.">
-    <link rel="icon" href="assets/icons/squirrel-svgrepo-com.svg">
-</head>
-<body>
-   
-    <h1>Novedades en Diseño web</h1>
-    <hr>
-    <h2>Colección de webs destacadas</h2>
-    <p>A continuación, una serie de webs nominadas a premios de Diseño, estas han sido mis favoritas.</p>
-    <hr>
-
-    <h3>
-        <a href="https://www.awwwards.com/inspiration/mobile-scroll-and-interactions-noomo-labs" target="_blank" title="AWWWARDS.com">
-            AWWWARDS
-        </a>
-    </h3>
-    <img src="fotos/1.png" alt="Descripción de la imagen" width="800" height="auto">
-    <p>Efectos visuales y animaciones muy interesantes. 
-        <br>Se trata de una web con muchos efectos visuales, con una impecable ilustración y <br> animación en 3D, todo aquello hace que la web sea muy vistosa, llamativa y que incite al <br> espectador a interactuar y a seguir navegando. <br>
-        Se trata de una web intuitiva gracias a una tipografía legible que no le resta protagonismo a <br> las animaciones e ilustraciones. <br> 
-        Lo más destacable de la web es su carácter visual y épico, la animación de la medusa <br> evoca, a lo misterioso, lo futurista, lo eterno y duradero, la fantasía… <br>
-        Se trata de una web muy armónica con una estética muy homogénea y con una experiencia <br> de usuario muy curiosa y distinta. <br> 
-    </p>
-
-    <h3>
-        <a href="https://droga5.com/work/" target="_blank" title="webbyawards.com">
-            WEBBYAWARDS
-        </a>
-    </h3>
-    <img src="fotos/2.png" alt="Descripción de la imagen" width="800" height="auto">
-
-    <p>
-        Se trata de una página web muy interesante en cuanto a lenguaje y experiencia de usuario, <br> muy sencillo e intuitivo.
-        Incita al usuario a querer leer más y descubrir cada historia presente. <br>
-        Buenas y llamativas imágenes que llaman la atención. <br> 
-        Animaciones sutiles e interesantes que enriquecen la navegación. <br>
-    </p>
-
-    <h3>
-        <a href="https://thefwa.com/cases/viva-la-labia" target="_blank" title="THEFWA.com">
-            THEFWA
-        </a>
-    </h3>
-    <img src="fotos/3.png" alt="Descripción de la imagen" width="800" height="auto">
-    <p>
-        Web muy visual y estética con ambiente de fantasía y mitología. <br>
-        Espacio idílico que transmite una sensación de tranquilidad. <br>
-        Música muy agradable y adecuada para los efectos visuales. <br>
-        Efectos visuales muy interesantes y llamativos que claramente enganchan al usuario. <br>
-        Experiencia de usuario muy intuitiva y sencilla de entender, combinada con la exquisita <br> estética de las ilustraciones 3D y los elementos decorativos. <br>
-        Evidente estética muy clara y homogénea. <br>
-        Contraste perfectamente armónico entre modo oscuro y modo claro. <br>
-        Sensualidad y amabilidad, con evidentes referencias hacia “lo femenino”. <br>
-    </p>
-
-    <h3>
-        <a href="https://pokemonhistory.tilda.ws/en" target="_blank" title="THEFWA.com">
-            CSSDESIGNAWARDS
-        </a>
-    </h3>
-    <img src="fotos/4.png" alt="Descripción de la imagen" width="800" height="auto">
-    <p>
-        Evidente estética Pokémon. <br>
-        Página web muy estética y homogénea. <br>
-        Estética amable, juguetona, agradable. <br>
-        Uso impecable de la ilustración, las animaciones y los efectos visuales, los cuales <br> enganchan al espectador. <br>
-        Página web muy variada, con muchos apartados diferentes dentro de un tema principal. <br>
-        Uso de una tipografía muy legible y curiosa, destaca el recurso de letras cortadas. <br>
-        Ambientación e ilustraciones que trasladan al mundo Pokémon. <br>
-        Experiencia de usuario excelente que incita a los espectadores a seguir en la web, <br> navegando y adentrándose en el mundo Pokémon. <br>
-        Web interactiva y llena de animaciones y efectos visuales muy llamativos e interesantes. <br>   
-    </p>
-</body>
+    <meta
+      name="description"
+      content="Novedades en diseño web y colecciones de webs destacadas."
+    />
+    <link rel="icon" href="assets/icons/squirrel-svgrepo-com.svg" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <h1>Mi Portafolio</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav id="menuNav">
+          <a href="#feed">Feed</a>
+          <a href="#about-me">About Me</a>
+          <a href="#projects">Projects</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h2>Bienvenido a mi Portafolio</h2>
+      <p>Explora mi trabajo y conoce más sobre mí.</p>
+      <div class="sections">
+        <div class="section">
+          <a href="#feed">Feed</a>
+        </div>
+        <div class="section">
+          <a href="#about-me">About Me</a>
+        </div>
+        <div class="section">
+          <a href="#projects">Projects</a>
+        </div>
+      </div>
+    </main>
+    <section id="feed">
+      <h2>Feed</h2>
+      <p>Aquí puedes ver mis últimas publicaciones y actualizaciones.</p>
+    </section>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>Hola, soy [Tu Nombre], un/a [tu especialidad]. Conoce más sobre mí.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Estos son algunos de los proyectos en los que he trabajado.</p>
+    </section>
+    <footer>
+      <p>© 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+      // Función para abrir y cerrar el menú de hamburguesa
+      function toggleMenu() {
+        const menu = document.getElementById("menuNav");
+        if (menu.style.display === "flex") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.menu h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+nav {
+  display: none;
+  flex-direction: column;
+  background: #444;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 1px solid #555;
+}
+nav a:hover {
+  background: #555;
+}
+/* Estilo para la página principal */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding-top: 80px;
+}
+main .sections {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+}
+.section:hover {
+  background: #eaeaea;
+}
+.section a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
+  }
+  nav a {
+    border: none;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+}
