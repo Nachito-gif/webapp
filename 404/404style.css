@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Para que el texto no se salga de la pantalla */
+}
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    animation: entrada 0.8s ease-out;
+}
+
+h1 {
+    color: #ff5733;
+    animation: shake 0.5s ease infinite;
+}
+
+.gif-container {
+    margin: 20px 0;
+    animation: aparecer 0.8s ease-in;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.digo-text {
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: rotate 2s linear infinite;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes aparecer {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes entrada {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.marquee-container {
+    position: fixed;
+    top: 50%; /* Centra verticalmente */
+    left: 0;
+    width: 100%;
+    overflow: hidden; /* Evita que el texto se salga */
+    pointer-events: none;
+    transform: translateY(-50%); /* Centra verticalmente */
+}
+
+
+.marquee-text {
+    font-size: 48px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    white-space: nowrap; /* Para que el texto esté en una sola línea */
+    animation: marquee 20s linear infinite; /* Animación de desplazamiento */
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
