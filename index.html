@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio Cano Saénz - Illustrator Portfolio</title>
+    <meta name="description"
+        content="Portfolio de Ignacio Cano Saénz, ilustrador y diseñador gráfico. Explora mi trabajo en diseño de personajes, stickers, posters y mapas. Contacta para colaboraciones.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="game-message">Press Space to Start</div>
+        <canvas id="gameCanvas" width="800" height="200"></canvas>
+        <div class="game-over-message hidden">
+            Game Over!
+            <button class="btn btn-primary" id="restart-button">Restart</button>
+        </div>
+    </div>
+    <!-- Lightbox Structure -->
+    <div class="lightbox hidden" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close"></button>
+            <img src="" alt="Preview" class="lightbox-image">
+        </div>
+    </div>
+    <header class="header">
+        <div class="container header-wrapper">
+            <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                <img src="images/MOCKUPS HECHOS/IMG_6375.PNG" class="menu-icon" alt="menu" aria-hidden="true">
+            </button>
+            <nav class="navbar" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">About me</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#work" class="nav-link">My Work</a></li>
+                    <li><a href="#contact" class="nav-link contact-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-text">
+                <h1 id="home">Ignacio Cano Saénz<br>Illustrator</h1>
+                <p class="bio">
+                    Hi, I'm Ignacio, a 21-year-old illustrator and graphic designer from Spain.
+                    My passion is to bring creative ideas to life through my designs.
+                    Let's create something amazing.
+                </p>
+                <div class="header-buttons">
+                    <a href="#about" class="btn btn-primary">About me</a>
+                    <a href="#blog" class="btn btn-primary">Blog</a>
+                    <a href="#work" class="btn btn-primary">My work</a>
+                    <a href="#contact" class="btn btn-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container" id="blog">
+            <h2 class="section-title">My Blog</h2>
+            <div class="blog-content">
+                <div class="blog-item">
+                    <h3>Sierra del Guadarrama</h3>
+                    <p class="text-small">8 de Enero de 2025</p>
+                    <p>La Sierra de Guadarrama, especialmente en la zona de Navacerrada, es un paraíso natural 🌿 que alberga una gran diversidad de aves 🐦. 
+                         Entre las especies más destacadas encontramos al majestuoso buitre leonado 🦅, al milano real 🦅 y al milano negro 🦅, que surcan los cielos ☁️ con su imponente envergadura.
+                         En los bosques 🌲, aves como el búho real 🦉 y el carbonero común 🐤 animan el paisaje con su presencia. 
+                         También se pueden observar aves ligadas al agua 💧, como el ánade real 🦆 y el cormorán grande 🐦, junto a humedales y pantanos 🌊. 
+                         Este rico mosaico de hábitats convierte a la Sierra en un lugar imprescindible para los amantes de la naturaleza 🌍 y un recordatorio de la importancia de preservar nuestros ecosistemas 🌱.</p>
+                </div>
+                <div class="blog-item">
+                    <h3>Almeria. </h3>
+                    <p class="text-small">9 de Enero de 2025</p>
+                    <p>Almería, situada en el sureste de España, es una provincia que combina historia, cultura y biodiversidad en un paisaje único 🌍.
+                         Su desierto de Tabernas 🏔️, el Cabo de Gata 🌊 y la sierra de María ⛰ destacan junto a su flora autóctona, como olivos 🍃 y chumberas, y su fauna, incluyendo flamencos 🦜 y tortugas bobas 🐢. 
+                         Lugares históricos como la Alcazaba 🏰 y las Cuevas del Almanzora ⛺ reflejan su rico pasado, mientras que su gastronomía, con migas 🍽️ y buñuelos 🍩, celebra su tradición. 
+                         Almería es un mosaico que une mar 🌊, montañas ⛰ y desierto 🏔️, recordándonos la importancia de proteger esta tierra única ❤️..</p>
+                </div>
+            </div>
+        </section>
+        <section class="section container" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/yo.jpg" alt="Ignacio Cano Saénz Profile" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a young artist fueled by a passion for illustration. I am always exploring new styles and
+                        techniques while maintaining my essence.
+                    </p>
+                    <p>
+                        Nature, especially birds, deeply influences my work. I love landscape art, architectural
+                        illustration,
+                        comic styles, and cartoons. I enjoy creating characters, and capturing the beauty of Andalucia
+                        and
+                        Madrid in my art.
+                    </p>
+                    <p>
+                        I am available for freelance work, and new projects. Let's connect to create something
+                        amazing!
+                    </p>
+                    <ul class="influences">
+                        <li>
+                            <span class="influence-icon">🌿</span> Nature
+                        </li>
+                        <li>
+                            <span class="influence-icon">🐦</span> Birds
+                        </li>
+                        <li>
+                            <span class="influence-icon">🏛️</span> Architecture
+                        </li>
+                        <li>
+                            <span class="influence-icon">🎨</span> Comic styles
+                        </li>
+                        <li>
+                            <span class="influence-icon">📍</span> Andalucia & Madrid
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="work">
+            <h2 class="section-title">My Work</h2>
+            <div class="portfolio-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="characters">Characters</button>
+                <button class="category-btn" data-category="illustration">Illustration</button>
+                <button class="category-btn" data-category="stickers">Stickers</button>
+            </div>
+            <div class="image-container">
+                <div class="portfolio-item" data-category="characters">
+                    <a href="#" data-lightbox="images/Personajes/Jungle.png">
+                        <img src="images/Personajes/Jungle.png" alt="Jungle character design" loading="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-item" data-category="characters">
+                   <a href="#" data-lightbox="images/Personajes/Ovejas.png">
+                        <img src="images/Personajes/Ovejas.png" alt="Ovejas character design" loading="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-item" data-category="characters">
+                    <a href="#" data-lightbox="images/Personajes/Sirenas.png">
+                        <img src="images/Personajes/Sirenas.png" alt="Sirenas character design" loading="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-item" data-category="stickers">
+                     <a href="#" data-lightbox="images/Pegatinas/Pegatinas.png">
+                        <img src="images/Pegatinas/Pegatinas.png" alt="Pegatinas stickers" loading="lazy">
+                     </a>
+                </div>
+                <div class="portfolio-item" data-category="stickers">
+                   <a href="#" data-lightbox="images/Pegatinas/Flamencas.png">
+                       <img src="images/Pegatinas/Flamencas.png" alt="Flamencas stickers" loading="lazy">
+                     </a>
+                </div>
+                <div class="portfolio-item" data-category="stickers">
+                     <a href="#" data-lightbox="images/Pegatinas/Claveles.png">
+                        <img src="images/Pegatinas/Claveles.png" alt="Claveles stickers" loading="lazy">
+                   </a>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                   <a href="#" data-lightbox="images/Posters/Aves Guadarrama.jpg">
+                        <img src="images/Posters/Aves Guadarrama.jpg" alt="Aves Guadarrama poster" loading="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                   <a href="#" data-lightbox="images/Posters/Aves de jardín.jpg">
+                        <img src="images/Posters/Aves de jardín.jpg" alt="Aves de jardín poster" loading="lazy">
+                   </a>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <a href="#" data-lightbox="images/Posters/Aves retiro 1.jpg">
+                         <img src="images/Posters/Aves retiro 1.jpg" alt="Aves retiro 1 poster" loading="lazy">
+                     </a>
+                </div>
+                 <div class="portfolio-item" data-category="illustration">
+                   <a href="#" data-lightbox="images/Posters/Madrid.jpg">
+                       <img src="images/Posters/Madrid.jpg" alt="Map of Madrid" loading="lazy">
+                     </a>
+                  </div>
+                <div class="portfolio-item" data-category="illustration">
+                  <a href="#" data-lightbox="images/Posters/Andalucía_.png">
+                       <img src="images/Posters/Andalucía_.png" alt="Map of Andalucia" loading="lazy">
+                   </a>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                   <a href="#" data-lightbox="images/Posters/Almeria.jpg">
+                        <img src="images/Posters/Almeria.jpg" alt="Map of Almeria" loading="lazy">
+                    </a>
+                 </div>
+            </div>
+        </section>
+        <section class="contact container" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+             <div class="contact-content">
+                <p>
+                    I'm eager to hear about your project. Use the form below, or reach out directly through social media.
+                </p>
+                   <form class="contact-form" id="contact-form">
+                        <label for="email">Your email</label>
+                        <input type="email" placeholder="Your email" id="email" required>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                     <div class="social-contact">
+                    <p>Follow me on <a href="https://instagram.com/natch_art_" target="_blank"
+                            rel="noopener noreferrer" class="social-link">Instagram: @natch_art_</a></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="accessibility-options container">
+            <button id="toggle-reader" aria-label="Toggle Screen Reader">Screen Reader</button>
+            <button id="toggle-colorblind" aria-label="Toggle Colorblind Mode">Colorblind Mode</button>
+           <button id="toggle-theme" aria-label="Toggle Dark Mode">Dark Mode</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
